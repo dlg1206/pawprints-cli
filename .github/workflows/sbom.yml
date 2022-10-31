@@ -1,0 +1,30 @@
+name: SBOM Workflow
+on: push
+jobs:
+  SBOM-Check:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: checkout
+        uses: actions/checkout@v2.5.0
+
+      - name: Generate JSON SBOM
+        uses: CycloneDX/gh-dotnet-generate-sbom@master
+        with:
+          path: ./RITScheduleMaker.sln
+          json: true
+      
+      - uses: actions/upload-artifact@v3
+        with:
+          name: cdx-sbom.json
+          path: bom.json
+
+      - name: Scan SBOM
+        id: scan
+        uses: anchore/scan-action@v3
+        with:
+          sbom: "bom.json"
+      
+      - name: View Scan Report
+        if: always()
+        run: cat "${{ steps.scan.outputs.sarif }}" 

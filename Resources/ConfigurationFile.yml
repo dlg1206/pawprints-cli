@@ -1,0 +1,15 @@
+# Blank Configuration File
+# More details can be found in the README
+name: 
+startDate: 
+endDate: 
+rules:
+  noClassOn: 
+  noClassBefore:
+  noClassAfter:
+  allowOnline:
+  layover:
+courses:
+buffers:
+output:
+format:
