@@ -130,7 +130,7 @@ public static class PawPrints
         Console.WriteLine("   / __ \\/   | |     / / __ \\/ __ \\/  _/ | / /_  __/ ___/");
         Console.WriteLine("  / /_/ / /| | | /| / / /_/ / /_/ // //  |/ / / /  \\__ \\ ");
         Console.WriteLine(" / ____/ ___ | |/ |/ / ____/ _, _// // /|  / / /  ___/ / ");
-        Console.WriteLine("/_/   /_/  |_|__/|__/_/   /_/ |_/___/_/ |_/ /_/  /____/  v1.0.0");
+        Console.WriteLine("/_/   /_/  |_|__/|__/_/   /_/ |_/___/_/ |_/ /_/  /____/  v1.0.1");
         Console.WriteLine("A Command Line Tool for Generating Schedules for Rochester Institute of Technology");
         Console.WriteLine();
     }
