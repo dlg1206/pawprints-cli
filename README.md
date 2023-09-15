@@ -25,14 +25,14 @@ An RIT API key is also required, which students can request **[here](https://api
 PawPrints CLI can be installed one of two ways: Download Binary or Build Locally
 
 ### Method 1: Binary
-Download the latest binary from the **[releases page](https://github.com/dlg1206/RIT-Schedule-Maker/releases)**
+1. Download the latest binary from the **[releases page](https://github.com/dlg1206/RIT-Schedule-Maker/releases)**
 
-Use ``./pawprints <args>``
+2. Use ``./pawprints <args>``
 
 ### Method 2: Local Install
-Clone this repo: ``git clone https://github.com/dlg1206/RIT-Schedule-Maker.git && cd RITScheduleMaker``
+1. Clone this repo: ``git clone https://github.com/dlg1206/RIT-Schedule-Maker.git && cd RIT-Schedule-Maker/RITScheduleMaker``
 
-Use ``dotnet run <args>``
+2. Use ``dotnet run <args>``
 
 ## Usage
 PawPrints CLI has two main commands: ``walk`` and ``genconfig``
